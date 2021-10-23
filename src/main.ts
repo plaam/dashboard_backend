@@ -11,6 +11,8 @@ async function bootstrap() {
   const PORT = process.env.PORT || 3000;
   const sessionRepository = getRepository(TypeORMSession);
   app.setGlobalPrefix('api');
+  app.setGlobalPrefix('api');
+  app.setGlobalPrefix('api');
   app.use(
     session({
       resave: false,
